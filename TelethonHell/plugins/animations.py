@@ -33,7 +33,7 @@ async def _(event):
     animation_ttl = range(12)
     event = await eor(event, "`Deploying...`")
     animation_chars = [
-        "**Heroku Connecting To Latest [Github Build](The-HellBot/HellBot)**",
+        "**Heroku Connecting To Latest [Github Build](SHIVANSH474/Hellbot)**",
         f"**Build started by user** {hell_mention}",
         f"**Deploy** `535a74f0` **by user** **{hell_mention}**",
         "**Restarting Heroku Server...**",
