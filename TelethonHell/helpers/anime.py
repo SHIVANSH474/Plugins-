@@ -359,7 +359,7 @@ async def get_anilist(qdb, page):
         return [f"No results Found"]
     data = result["data"]["Page"]["media"][0]
     # pylint: disable=possibly-unused-variable
-    chnl = "[†hê Hêllẞø†](https://t.me/Its_Hellbot)"
+    chnl = "[UPDATES](https://t.me/STRANGERHELLBOT)"
     idm = data.get("id")
     idmal = data.get("idMal")
     romaji = data["title"]["romaji"]
@@ -432,7 +432,7 @@ async def get_anilist(qdb, page):
     banner_ = requests.get(banner)
     open(f"{idm}.jpg", "wb").write(banner_.content)
     title_img = f"{idm}.jpg"
-    logo = "https://telegra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg"
     descr = ""
     descr += f"<img src='{banner}'/> \n"
     descr += data["description"]
@@ -479,7 +479,7 @@ async def get_manga(qdb, page):
         name = f"""« {c_flag} » **{romaji}**
         {native}"""
     banner = f"https://img.anili.st/media/{idm}"
-    logo = "https://telegra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg"
     descr = ""
     descr += f"<img src='{banner}'/> \n"
     descr += synopsis
@@ -519,7 +519,7 @@ async def get_character(query, page):
     img = data["image"]["large"]
     site_url = data["siteUrl"]
     desc = data["description"]
-    logo = "https://telegra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg"
     descr = ""
     descr += f"<img src='{img}'/> \n"
     descr += desc
@@ -533,7 +533,7 @@ async def get_character(query, page):
 **✘ DETAILS :** [More Info...]({paste})
 
 
-        **<\>** [†hê Hêllẞø†](https://t.me/its_hellbot)
+        **<\>** [UPDATES](https://t.me/STRANGERHELLBOT)
 """
     total = result["data"]["Page"]["pageInfo"]["total"]
     return img, [cap_text, total], [id_]
