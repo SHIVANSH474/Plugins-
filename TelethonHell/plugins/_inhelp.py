@@ -93,20 +93,20 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title=" Stranger HellBot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b 𝑆𝑇𝑅𝐴𝑁𝐺𝐸𝑅 𝐵𝑂𝑇 𝐴𝐿𝐼𝑉𝐸</b> «««"
+            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>𝑆𝑇𝑅𝐴𝑁𝐺𝐸𝑅 𝐵𝑂𝑇 𝐴𝐿𝐼𝑉𝐸</b> «««"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo
             )
             alv_btn = [
                 [
-                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
+                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={SHIVANSH39}")
                 ],
                 [
                     Button.url("My Channel", f"https://t.me/{my_channel}"),
