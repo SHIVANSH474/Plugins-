@@ -11,7 +11,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/SHIVANSH474/Hellbot",
+  "repository": "https://github.com/SHIVANSH474/Plugins-",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
